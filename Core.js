@@ -215,7 +215,7 @@ this.FindObjectType = function (TypeName) {
 
 this.CreateObject = function (TypeName) {
   var type = this.FindObjectType(TypeName);
-
+  console.log('ici');
   if (type) {
     var newObject = new type.Class();
     // Extend the object using the global object header
